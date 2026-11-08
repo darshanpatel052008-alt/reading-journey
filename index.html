@@ -3,172 +3,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A visual timeline of my reading journey.">
-  <title>My Reading Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual story about growing up with comics, losing interest in reading, and finding it again.">
+  <title>Home | My Reading Journey</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Navigation -->
   <header class="site-header">
-    <a class="logo" href="#top">MY READING JOURNEY</a>
-    <nav aria-label="Main navigation">
-      <a href="#timeline">Timeline</a>
-      <a href="#reflection">Reflection</a>
+    <a class="logo" href="index.html">MY READING JOURNEY<span class="logo-dot">.</span></a>
+    <nav aria-label="Main navigation" class="site-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="reflection.html">Reflection</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main>
+    <section class="hero comic-dots">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow comic-tag">ISSUE NO. 01 / THE ORIGIN STORY</span>
+          <h1>From <em>Panels</em><br>to Pages.</h1>
+          <p>I started with Spider-Man comics, learned to create movies in my head through novels, and eventually found my way back to reading after losing interest.</p>
+          <p>This is the story of how reading became something I chose for myself.</p>
+          <a class="button button-red" href="timeline.html">Explore my timeline <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-art" aria-label="Comic-book-inspired display with book covers">
+          <div class="hero-art-top"><span>THE ADVENTURE BEGINS</span><span>VOL. 01</span></div>
+          <div class="hero-art-content">
+            <div class="burst" aria-hidden="true">POW!</div>
+            <img class="cover cover-comic" src="https://covers.openlibrary.org/b/isbn/9780785124924-M.jpg" alt="Representative Ultimate Spider-Man comic collection cover">
+            <img class="cover cover-novel" src="https://covers.openlibrary.org/b/isbn/9780590353427-M.jpg" alt="Harry Potter and the Sorcerer's Stone book cover">
+          </div>
+          <div class="hero-art-bottom">ONE READER. MANY CHAPTERS.</div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Comic-book introduction -->
-    <section class="hero">
-      <div class="hero-content">
-        <p class="comic-label">THE ORIGIN STORY</p>
-        <h1>From Panels<br>to Pages.</h1>
-        <p class="hero-description">
-          From reading Spider-Man comics as a kid to
-          discovering novels and eventually rediscovering
-          my love for reading, this is how my relationship
-          with books changed over time.
-        </p>
-        <a href="#timeline" class="start-button">
-          Explore My Story
+    <section class="intro section-wrap">
+      <span class="eyebrow">ABOUT THIS PROJECT</span>
+      <h2>Reading was never a straight line.</h2>
+      <p>When I was seven, I didn't even understand what I was supposed to do with a comic book. Years later, I was imagining entire scenes from novels. Then COVID happened, and reading started to feel like another assignment. My journey has been a mix of curiosity, frustration, and rediscovery.</p>
+      <div class="feature-grid">
+        <a class="feature-card" href="timeline.html">
+          <span class="feature-number">01</span>
+          <h3>The Timeline</h3>
+          <p>Follow six moments that changed my relationship with reading.</p>
+          <span class="card-link">Read the chapters →</span>
+        </a>
+        <a class="feature-card" href="reflection.html">
+          <span class="feature-number">02</span>
+          <h3>The Reflection</h3>
+          <p>Why learning to imagine stories helped me think about my own choices.</p>
+          <span class="card-link">Read the reflection →</span>
         </a>
       </div>
-
-      <div class="comic-art" aria-hidden="true">
-        <span class="issue-tag">ISSUE #01</span>
-        <div class="burst">POW!</div>
-        <div class="speech-bubble">
-          Every story starts somewhere...
-        </div>
-        <div class="comic-caption">
-          THE ADVENTURE BEGINS!
-        </div>
-      </div>
     </section>
-
-    <!-- Reading timeline -->
-    <section id="timeline" class="timeline-section">
-      <div class="section-heading">
-        <p class="section-label">CHAPTER BY CHAPTER</p>
-        <h2>My Reading Timeline</h2>
-        <p>
-          My relationship with reading wasn't always the same.
-          Here are the moments that shaped it.
-        </p>
-      </div>
-
-      <ol class="timeline">
-
-        <li class="timeline-item">
-          <article class="story-card comic-card">
-            <span class="chapter">CHAPTER 01 / CHILDHOOD</span>
-            <h3>Discovering Comics</h3>
-            <p>
-              My reading journey started when a neighbor gave
-              my family Spider-Man comics. At first, I was
-              more interested in the pictures than the words.
-              Eventually, I learned to follow the speech
-              bubbles and understand the stories.
-            </p>
-            <span class="comic-stamp">THE BEGINNING!</span>
-          </article>
-        </li>
-
-        <li class="timeline-item">
-          <article class="story-card comic-card">
-            <span class="chapter">CHAPTER 02 / FIFTH GRADE</span>
-            <h3>Discovering Novels</h3>
-            <p>
-              When I started reading Harry Potter, I
-              discovered a different way of experiencing
-              stories. Instead of relying on illustrations,
-              I had to imagine the characters and scenes
-              myself, almost like directing a movie in my head.
-            </p>
-          </article>
-        </li>
-
-        <li class="timeline-item">
-          <article class="story-card">
-            <span class="chapter">CHAPTER 03 / GROWING UP</span>
-            <h3>Exploring Different Stories</h3>
-            <p>
-              My interest in comics led me to explore
-              other characters, stories, and television
-              adaptations. I started realizing that
-              storytelling could take many different forms.
-            </p>
-          </article>
-        </li>
-
-        <li class="timeline-item">
-          <article class="story-card">
-            <span class="chapter">CHAPTER 04 / COVID</span>
-            <h3>My Reading Slump</h3>
-            <p>
-              During COVID, I gradually lost interest in
-              reading. School assignments made it feel
-              more like a chore than something I actually
-              wanted to do.
-            </p>
-          </article>
-        </li>
-
-        <li class="timeline-item">
-          <article class="story-card">
-            <span class="chapter">CHAPTER 05 / HIGH SCHOOL</span>
-            <h3>Rediscovering Reading</h3>
-            <p>
-              Eventually, I started choosing books based
-              on my own interests. Discovering authors like
-              Stephen King helped me remember why I
-              enjoyed reading in the first place.
-            </p>
-          </article>
-        </li>
-
-        <li class="timeline-item">
-          <article class="story-card">
-            <span class="chapter">CHAPTER 06 / COLLEGE</span>
-            <h3>Reading Today</h3>
-            <p>
-              Now that I'm in college, I see reading
-              differently. It's not just about finishing
-              a book. It's about imagination, learning,
-              and having the freedom to explore ideas
-              that interest me.
-            </p>
-          </article>
-        </li>
-
-      </ol>
-    </section>
-
-    <!-- Final reflection -->
-    <section id="reflection" class="reflection">
-      <div class="reflection-content">
-        <p class="section-label">THE NEXT CHAPTER</p>
-        <h2>Becoming the Director of My Own Story</h2>
-        <p>
-          Reading novels taught me how to become the
-          director of the movie playing in my head.
-          Looking back, I think that same idea applies
-          to my own life. Just as I learned to choose
-          what I wanted to read, I'm learning to make
-          my own decisions about what I study,
-          explore, and pursue.
-        </p>
-        <a href="#top" class="back-link">Back to Beginning ↑</a>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
-    <p>My Reading Journey | WRD 103 Multimodal Project</p>
+    <span>WRD 103 · Multimodal Literacy Narrative</span>
+    <span>Representative book covers via <a href="https://openlibrary.org/" target="_blank" rel="noopener noreferrer">Open Library</a></span>
   </footer>
 </body>
 </html>
+
