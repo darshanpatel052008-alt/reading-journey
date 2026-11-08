@@ -647,3 +647,16 @@ h1, h2, h3 {
     transition: none;
   }
 }
+
+/* Homepage author name */
+.author-name {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--ink);
+  border-bottom: 3px solid var(--red);
+  padding-bottom: 5px;
+  margin: 0 0 20px;
+}
