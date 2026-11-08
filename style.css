@@ -2,12 +2,12 @@
 /* Shared design for all three pages */
 :root {
   --ink: #182236;
-  --paper: #f8f5ed;
+  --paper: #223a67;
   --white: #fff;
   --red: #ef4d47;
   --yellow: #ffdc61;
   --blue: #70c6e6;
-  --muted: #5e6675;
+  --muted: #d7deed;
 }
 
 /* General styling */
@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  color: var(--ink);
+  color: #eef3ff;
   background: var(--paper);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.7;
@@ -33,6 +33,7 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 h1, h2, h3 {
@@ -63,8 +64,9 @@ h1, h2, h3 {
   align-items: center;
   gap: 20px;
   padding: 18px 5%;
-  background: var(--white);
-  border-bottom: 3px solid var(--ink);
+  background: var(--ink);
+  color: white;
+  border-bottom: 3px solid var(--yellow);
 }
 
 .logo {
@@ -94,6 +96,7 @@ h1, h2, h3 {
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
   background: var(--yellow);
+  color: var(--ink);
 }
 
 /* Common buttons */
@@ -142,6 +145,7 @@ h1, h2, h3 {
 /* Home hero */
 .hero {
   border-bottom: 4px solid var(--ink);
+  color: var(--ink);
 }
 
 .hero-inner {
@@ -170,6 +174,7 @@ h1, h2, h3 {
 .hero-copy p {
   max-width: 520px;
   font-size: 1.07rem;
+  color: var(--ink);
 }
 
 .hero-copy .button {
@@ -192,6 +197,7 @@ h1, h2, h3 {
   font-size: .8rem;
   font-weight: 900;
   letter-spacing: .09em;
+  color: var(--ink);
 }
 
 .hero-art-top {
@@ -251,6 +257,7 @@ h1, h2, h3 {
   background: var(--yellow);
   border: 3px solid var(--ink);
   box-shadow: 3px 3px 0 var(--ink);
+  color: var(--ink);
 }
 
 /* Home introduction */
@@ -262,6 +269,7 @@ h1, h2, h3 {
 .intro h2 {
   font-size: clamp(2rem, 4vw, 3.1rem);
   margin: 10px 0 18px;
+  color: white;
 }
 
 .intro > p {
@@ -285,6 +293,7 @@ h1, h2, h3 {
   border-radius: 12px;
   text-decoration: none;
   transition: transform .2s;
+  color: var(--ink);
 }
 
 .feature-card:hover {
@@ -303,7 +312,7 @@ h1, h2, h3 {
 }
 
 .feature-card p {
-  color: var(--muted);
+  color: #5e6675;
 }
 
 .card-link {
@@ -314,6 +323,7 @@ h1, h2, h3 {
 .page-banner {
   padding: 72px 0 60px;
   border-bottom: 4px solid var(--ink);
+  color: var(--ink);
 }
 
 .page-banner h1 {
@@ -340,6 +350,7 @@ h1, h2, h3 {
   text-decoration: none;
   font-size: .82rem;
   font-weight: 800;
+  color: var(--ink);
 }
 
 .chapter-nav a:hover {
@@ -354,7 +365,7 @@ h1, h2, h3 {
 .timeline {
   position: relative;
   padding-left: 50px;
-  border-left: 4px solid var(--ink);
+  border-left: 4px solid white;
 }
 
 .timeline-item {
@@ -369,6 +380,7 @@ h1, h2, h3 {
   border: 2px solid #ded9d0;
   border-radius: 12px;
   scroll-margin-top: 20px;
+  color: var(--ink);
 }
 
 .timeline-item.is-comic {
@@ -435,7 +447,7 @@ h1, h2, h3 {
 
 .media-card > img {
   height: 225px;
-  max-width: 100%;
+  width: 100%;
   object-fit: contain;
   background: white;
   box-shadow: 3px 4px 0 rgba(0,0,0,.15);
@@ -462,45 +474,14 @@ h1, h2, h3 {
   box-shadow: 3px 4px 0 rgba(0,0,0,.15);
 }
 
-/* Reading slump illustration */
-.slump-card {
-  min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #e9e8e5;
-  border: 2px dashed #95979d;
-  border-radius: 9px;
-}
-
-.closed-book {
-  width: 116px;
-  height: 150px;
-  border: 8px solid #7a818c;
-  border-left: 17px solid #555d6a;
-  border-radius: 4px 12px 12px 4px;
-  transform: rotate(-10deg);
-  background: #bbbfc7;
-  box-shadow: 9px 11px 0 #d0d1d4;
-}
-
-.slump-card p {
-  font-size: .79rem;
-  font-weight: 900;
-  letter-spacing: .1em;
-  color: #656a73;
-}
-
-.next-chapter {
-  text-align: center;
-  margin: 75px auto 10px;
-  max-width: 590px;
-}
-
-.next-chapter h2 {
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  margin: 12px 0 28px;
+/* Reading slump real image */
+.photo-media img {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 3px 4px 0 rgba(0,0,0,.15);
 }
 
 /* Reflection page */
@@ -534,10 +515,11 @@ h1, h2, h3 {
 .reflection-body h2 {
   font-size: 1.8rem;
   margin: 44px 0 10px;
+  color: white;
 }
 
 .reflection-body p {
-  color: #3c4554;
+  color: #dfe6f5;
 }
 
 .pull-quote {
@@ -547,6 +529,7 @@ h1, h2, h3 {
   font-size: clamp(1.5rem, 4vw, 2.3rem);
   font-weight: 800;
   line-height: 1.3;
+  color: white;
 }
 
 .reflection-actions {
@@ -559,6 +542,7 @@ h1, h2, h3 {
 
 .text-link {
   font-weight: 800;
+  color: var(--yellow);
 }
 
 /* Footer */
@@ -567,10 +551,14 @@ h1, h2, h3 {
   justify-content: space-between;
   gap: 15px;
   padding: 25px 5%;
-  background: white;
-  border-top: 1px solid #ddd;
+  background: var(--ink);
+  border-top: 1px solid #314563;
   font-size: .82rem;
-  color: var(--muted);
+  color: #d6dfef;
+}
+
+.site-footer a {
+  color: var(--yellow);
 }
 
 /* Tablet and mobile responsiveness */
